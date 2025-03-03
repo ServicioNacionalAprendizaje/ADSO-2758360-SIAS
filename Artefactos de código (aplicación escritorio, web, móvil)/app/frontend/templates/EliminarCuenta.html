@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAS - Consulta de Paciente</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 0;
+        background-color: #f0f8ff;
+        color: #00264d;
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 38, 77, 0.2);
+      }
+      label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #0073e6;
+        color: white;
+        transition: background 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #005bb5;
+      }
+      header {
+        background: #00509e;
+        color: white;
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>SIAS - Consulta de Paciente</header>
+      <h2>Ingrese la Cédula del Paciente</h2>
+      <form action="/gestion/user_delete" method="POST">
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="document_number" required />
+        <button type="submit" class="btn">Eliminar Paciente</button>
+      </form>
+    </div>
+  </body>
+</html>

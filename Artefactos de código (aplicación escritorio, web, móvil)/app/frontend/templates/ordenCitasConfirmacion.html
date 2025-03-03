@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Confirmación de datos</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/style/sytyle_confirmacionOrdenmedicamento.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="confirmacion">
+        <h2>Confirmación de Cita</h2>
+        <p class="detalle"><strong>Día:</strong> {{ fecha }}</p>
+        <p class="detalle">
+          <strong>Nombre Completo:</strong> {{ nombre_completo }}
+        </p>
+        <p class="detalle"><strong>Especialidad:</strong> {{ especialidad }}</p>
+        <p class="detalle"><strong>Dirección:</strong> {{ direccion }}</p>
+        <p class="detalle"><strong>Email:</strong> {{ email }}</p>
+        <p class="detalle"><strong>Ciudad:</strong> {{ ciudad }}</p>
+        <p class="detalle"><strong>Hora:</strong> {{ hora }}</p>
+        <button class="btn btn-primary" onclick="window.print()">
+          Imprimir
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

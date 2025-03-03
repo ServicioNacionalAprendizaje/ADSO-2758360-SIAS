@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAS - Gestión de Medicamentos</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 0;
+        background-color: #f0f8ff;
+        color: #00264d;
+      }
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 38, 77, 0.2);
+      }
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .btn {
+        display: inline-block;
+        width: 80%;
+        padding: 14px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      .btn-medicamentos {
+        background-color: #a8dadc;
+        color: #00264d;
+      }
+      .btn-eliminar {
+        background-color: #cce3f0;
+        color: #00264d;
+      }
+      .btn:hover {
+        opacity: 0.85;
+        transform: scale(1.05);
+      }
+      header {
+        background: #00509e;
+        color: white;
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+      }
+      .form-container {
+        margin-top: 20px;
+      }
+      .form-container label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+      }
+      .form-container input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        text-align: center;
+      }
+      .form-container button {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        font-size: 18px;
+        background-color: #00509e;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .form-container button:hover {
+        background-color: #003f7f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>SIAS - Sistema Integral de Atención en Salud</header>
+      <h2>Gestión de Medicamentos</h2>
+      <div class="btn-container">
+        <a href="/all_list/medicamentos" class="btn btn-medicamentos"
+          >Lista de Medicamentos</a
+        >
+        <a href="/gestion/medicamentos_delete" class="btn btn-eliminar"
+          >Eliminar Medicamentos</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAS - Eliminar Especialista</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin: 0;
+        background-color: #f0f8ff;
+        color: #00264d;
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 38, 77, 0.2);
+      }
+      label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #d9534f;
+        color: white;
+        transition: background 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #c9302c;
+      }
+      header {
+        background: #b22222;
+        color: white;
+        padding: 20px;
+        font-size: 22px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>SIAS - Eliminar Especialista</header>
+      <h2>Ingrese la Cédula del Especialista</h2>
+      <form action="/gestion/especialista_delete" method="POST">
+        <label for="document_number">Cédula del Especialista:</label>
+        <input
+          type="text"
+          id="document_number"
+          name="document_number"
+          required
+        />
+        <button type="submit" class="btn">Eliminar Especialista</button>
+      </form>
+    </div>
+  </body>
+</html>
